@@ -1,0 +1,226 @@
+header {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99999;
+    background: white;
+    border-bottom: 2px solid #315597;
+}
+
+.container {
+    width: 1000px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header .main-menu {
+    width: 800px;
+}
+
+header .main-menu > ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header .main-menu > ul a{
+    padding: 10px;
+    color: #242e2b;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: sans-serif;
+    font-size: 13px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+header .main-menu > ul > li:not(:hover){
+    transition: background 1s;
+}
+
+header .main-menu > ul > li {
+    background: rgb(165, 193, 240);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    min-width: 130px;
+    width: 155px;
+}
+
+header .main-menu > ul li:hover{
+    background: #315597;
+    transition: background 1s;
+}
+
+section:nth-of-type(1) {
+    margin-top:150px;
+}
+
+.text1
+{
+    display: inline-table;
+}
+
+.logo_page 
+{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Title_text 
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.text1 .img
+{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 330px;
+}
+
+.text1 p
+{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 20px;
+    width: 900px;
+}
+
+.text2
+{
+    background-color: rgb(199, 216, 243);
+    width: 90%;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.geleri
+{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.text3
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.text3    .post-wrap 
+{
+max-width: 1120px;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.text3    .post-item 
+{
+    padding: 10px;
+}
+
+.text3    .post-item-wrap 
+{
+    background: rgb(199, 216, 243);
+    position: relative;
+    border-radius: 20px;
+}
+
+.text3    .post-item-wrap:after 
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgb(166, 186, 219);
+    transform: rotate(1deg);
+    transform-origin: left bottom;
+    transition: .3s ease-in-out;
+    border-radius: 20px;
+}
+
+.text3    .post-item-wrap:hover:after 
+{
+    top: 5px;
+    left: 5px;
+    transform: rotate(2deg);
+}
+
+.text3    .post-link 
+{
+    text-decoration: none;
+    display: block;
+    padding: 30px;
+}
+
+.text3    .post-title 
+{
+    color: #000000;
+    margin-bottom: 15px;
+    transition: .3s ease-in-out;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text3 .post-item-wrap:hover .post-title 
+{
+    color: #163774;
+}
+
+.text3    .post-content 
+{
+    color: #242e2b;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 768px) 
+{
+    .post-item 
+    {
+        flex-basis: 50%;
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 960px) 
+{
+    .post-item 
+    {
+        flex-basis: 33.333333333%;
+    }
+}
+
+.content3
+{
+    background: #306f7738;
+    width: 90%;
+    margin: auto;
+    border-radius: 30px;
+}
